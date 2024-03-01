@@ -1,0 +1,55 @@
+*{
+    background-color: lightblue;
+  }
+  
+  nav, #contenedor {
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+  header,footer{
+    width: 100%;
+  }
+  
+  body{
+  height: 100vh;
+  }
+  
+  header, footer{
+    height: 8%;
+    background: lightgray;
+  }
+  
+  nav{
+    height: 5%;
+    background: lightyellow;
+  }
+  
+  section, article, aside{
+  height: 95%;
+  }
+  
+  aside{
+    width: 30%;
+    margin-right: 15px;
+    margin-left: 15px;
+    background: rgb(219, 63, 89);
+  }
+
+  article{
+  width: 30%;
+  margin-right: 15px;
+  margin-left: 15px;
+  background: lightgreen;
+  }
+  
+  section{
+    width: 50%;
+    background: rgb(199, 145, 153);
+  }
+  
+  #contenedor{
+    display: flex;
+    height: 65%;
+  }
+  
