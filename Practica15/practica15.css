@@ -1,0 +1,77 @@
+body{
+    height: 100%;
+    width: 100%;
+    background-color: aquamarine;
+}
+
+div{
+    margin-top: 3vh;
+}
+
+tr:nth-child(2){
+    background: rgb(0, 0, 0);
+    color: white;
+}
+
+tr:nth-last-child(2){
+    background: rgb(205, 203, 76);
+}
+
+tr:first-child{
+    background: rgb(76, 162, 205);
+}
+
+tr:last-child{
+    background: rgb(205, 76, 76);
+}
+
+a:link{
+    color: chocolate;
+}
+
+a:visited{
+    color: brown;
+}
+
+#square{
+    background-color: blue;
+    height: 15vh;
+    width: 15vh;
+    transition: background-color 2s;
+    transition: border-radius 2s;
+}
+
+#square:hover{
+    background-color: red;
+    border-radius: 100px;
+}
+
+#active {
+    width: 200px;
+    height: 100px;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    cursor: pointer;
+}
+
+#active:active {
+    background-color: red;
+}
+
+#focus {
+    width: 200px;
+    height: 100px;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    cursor: pointer;
+    outline: none;
+}
+
+#focus:focus {
+    outline: 2px solid red;
+    background-color: red;
+}
