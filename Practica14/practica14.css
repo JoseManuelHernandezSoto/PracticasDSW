@@ -1,0 +1,52 @@
+body{
+    height: 100%;
+    width: 100%;
+    background-color: aquamarine;
+}
+
+div{
+    background-color: rgb(228, 240, 125);
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+#em{
+    height: 5em;
+    width: 10em;
+    margin-bottom: 1em;
+}
+
+#ex{
+    height: 10ex;
+    width: 23ex;
+    margin-bottom: 3ex;
+}
+
+#rem{
+    height: 5rem;
+    width: 10rem;
+    margin-bottom: 1rem;
+}
+
+#vw{
+    height: 5vw;
+    width: 10vw;
+    margin-bottom: 1vw;
+}
+
+#vh{
+    height: 10vh;
+    width: 20vh;
+    margin-bottom: 1vh;
+}
+
+#vmin{
+    height: 10vmin;
+    width: 20vmin;
+    margin-bottom: 1vmin;
+}
+
+#vmax{
+    height: 5vmax;
+    width: 10vmax;
+}
