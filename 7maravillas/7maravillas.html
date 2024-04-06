@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="7maravillas.css">
+    <title>7 MARAVILLAS DEL MUNDO</title>
+</head>
+<body>
+    <header>7 MARAVILLAS DEL MUNDO</header>
+    <h1>¿Qué Maravilla del mundo es?</h1>
+
+    <!-- 
+        Pantalla inicial 
+        Este div representa la pantalla inicial del juego. Contiene un mensaje de bienvenida 
+        y un botón "JUGAR" que, cuando se hace clic, inicia el juego llamando a la función comenzarJuego().
+    -->
+    <div id="pantalla-inicial">
+        <p>¿A qué maravilla pertenece la imagen?</p>
+        <button class="btn" onclick="comenzarJuego()">JUGAR</button>
+    </div>
+
+    <!-- 
+        Pantalla juego
+        Este div representa la pantalla del juego en sí. Contiene la imagen de la maravilla del mundo que 
+        el jugador debe adivinar, así como tres opciones de respuesta representadas por otros div dentro de la clase .opciones.
+    -->
+    <div class="pantalla-juego" id="pantalla-juego">
+        <img src="img/chichen-itza.svg" alt="" id="imgMaravilla">
+        <!-- 
+            Este div contiene las opciones de respuesta para la pregunta actual. 
+            Cada opción está representada por un div con la clase .opcion.
+        -->
+        <div class="opciones">
+            <div class="opcion" id="op0" onclick="comprobarRespuesta(0)">
+                <div class="letra" id="l0">A</div>
+                <div class="nombre" id="n0">OPCION A</div>
+            </div>
+            <div class="opcion" id="op1" onclick="comprobarRespuesta(1)">
+                <div class="letra" id="l1">B</div>
+                <div class="nombre" id="n1">OPCION B</div>
+            </div>
+            <div class="opcion" id="op2" onclick="comprobarRespuesta(2)">
+                <div class="letra" id="l2">C</div>
+                <div class="nombre" id="n2">OPCION C</div>
+            </div>
+        </div>
+    </div>
+    <!-- 
+        Pantalla final
+        Este div representa la pantalla final del juego. Muestra el número de respuestas correctas 
+        e incorrectas, así como un botón "VOLVER AL INICIO" que, cuando se hace clic, lleva al 
+        jugador de vuelta a la pantalla inicial.
+    -->
+    <div id="pantalla-final">
+        <h2>CORRECTAS: <span id="numCorrectas">3</span></h2>
+        <h2>INCORRECTAS: <span id="numIncorrectas">2</span></h2>
+        <button class="btn" onclick="volverAlInicio()">VOLVER AL INICIO</button>
+    </div>
+
+    
+    
+    <script src="7maravillas.js"></script>
+</body>
+</html>
